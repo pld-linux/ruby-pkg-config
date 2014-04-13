@@ -1,12 +1,13 @@
 Summary:	pkg-config module for Ruby
 Summary(pl.UTF-8):	Moduł pkg-config dla języka Ruby
 Name:		ruby-pkg-config
-Version:	1.0.7
+Version:	1.1.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Development/Languages
-Source0:	http://rubyforge.org/frs/download.php/72681/pkg-config-%{version}.tgz
-# Source0-md5:	20cde08ae8ebec5b89ad8142840735b9
+#Source0Download: http://rubyforge.org/frs/?group_id=3443
+Source0:	http://rubyforge.org/frs/download.php/74790/pkg-config-%{version}.tgz
+# Source0-md5:	6f20e3ac87490556a56f0a057fbdab1a
 URL:		http://rubyforge.org/projects/cairo/
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.277
