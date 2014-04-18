@@ -7,11 +7,12 @@ Summary:	pkg-config module for Ruby
 Summary(pl.UTF-8):	Moduł pkg-config dla języka Ruby
 Name:		ruby-%{pkgname}
 Version:	1.1.5
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
 # Source0-md5:	c32204c8d6f0d1cae84f6c67b3e0fd92
+Patch0:		%{name}-avoid-cycle.patch
 URL:		https://github.com/ruby-gnome2/pkg-config
 BuildRequires:	pkgconfig
 BuildRequires:	rpm-rubyprov
@@ -33,6 +34,7 @@ Moduł pkg-config dla języka Ruby.
 
 %prep
 %setup -q -n %{pkgname}-%{version}
+%patch0 -p1
 
 %build
 # write .gemspec
