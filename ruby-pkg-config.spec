@@ -34,10 +34,15 @@ Moduł pkg-config dla języka Ruby.
 %prep
 %setup -q -n %{pkgname}-%{version}
 
+%build
+# write .gemspec
+%__gem_helper spec
+
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{ruby_vendorlibdir}
+install -d $RPM_BUILD_ROOT{%{ruby_vendorlibdir},%{ruby_specdir}}
 cp -a lib/* $RPM_BUILD_ROOT%{ruby_vendorlibdir}
+cp -p %{pkgname}-%{version}.gemspec $RPM_BUILD_ROOT%{ruby_specdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -47,3 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc NEWS README.rdoc
 %{ruby_vendorlibdir}/%{pkgname}.rb
 %{ruby_vendorlibdir}/%{pkgname}
+%{ruby_specdir}/%{pkgname}-%{version}.gemspec
