@@ -7,7 +7,7 @@ Summary:	pkg-config module for Ruby
 Summary(pl.UTF-8):	Moduł pkg-config dla języka Ruby
 Name:		ruby-%{pkgname}
 Version:	1.2.8
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		Development/Languages
 Source0:	https://rubygems.org/downloads/%{pkgname}-%{version}.gem
