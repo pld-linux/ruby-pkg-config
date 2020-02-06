@@ -6,12 +6,14 @@
 Summary:	pkg-config module for Ruby
 Summary(pl.UTF-8):	Moduł pkg-config dla języka Ruby
 Name:		ruby-%{pkgname}
-Version:	1.3.7
+Version:	1.4.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Development/Languages
+# tarballs: https://github.com/ruby-gnome/pkg-config/releases
+# gems: https://rubygems.org/gems/pkg-config
 Source0:	https://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	00e1e89361e2ba697fc02395345a1e43
+# Source0-md5:	5227a5ca2914de038f9c399c95cf3de5
 Patch0:		%{name}-avoid-cycle.patch
 URL:		https://github.com/ruby-gnome2/pkg-config
 BuildRequires:	pkgconfig
