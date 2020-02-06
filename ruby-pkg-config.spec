@@ -19,6 +19,7 @@ URL:		https://github.com/ruby-gnome2/pkg-config
 BuildRequires:	pkgconfig
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
+BuildRequires:	ruby-modules >= 1:1.8
 %if %{with tests}
 BuildRequires:	ruby-bundler
 BuildRequires:	ruby-rake
